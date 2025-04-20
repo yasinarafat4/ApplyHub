@@ -1,13 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
+import Spinner from "../components/Spinner";
 
 const Apply = () => {
+  // Set loading spinner
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+  if (loading) {
+    return <Spinner />;
+  }
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
       <div className="bg-white p-6 rounded-2xl shadow-md w-full max-w-lg">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Apply Now</h2>
+        <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
+          Apply Now
+        </h2>
         <form className="space-y-4">
           <div>
-            <label htmlFor="full_name" className="block text-gray-700 font-medium mb-1">Full Name</label>
+            <label
+              htmlFor="full_name"
+              className="block text-gray-700 font-medium mb-1"
+            >
+              Full Name
+            </label>
             <input
               type="text"
               id="full_name"
@@ -18,7 +38,12 @@ const Apply = () => {
             />
           </div>
           <div>
-            <label htmlFor="email" className="block text-gray-700 font-medium mb-1">Email</label>
+            <label
+              htmlFor="email"
+              className="block text-gray-700 font-medium mb-1"
+            >
+              Email
+            </label>
             <input
               type="email"
               id="email"
@@ -29,7 +54,12 @@ const Apply = () => {
             />
           </div>
           <div>
-            <label htmlFor="cover_letter" className="block text-gray-700 font-medium mb-1">Cover Letter</label>
+            <label
+              htmlFor="cover_letter"
+              className="block text-gray-700 font-medium mb-1"
+            >
+              Cover Letter
+            </label>
             <textarea
               id="cover_letter"
               name="cover_letter"
