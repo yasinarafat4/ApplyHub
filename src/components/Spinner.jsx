@@ -2,11 +2,11 @@ import React from "react";
 
 const Spinner = () => {
   return (
-    <div className="flex items-center justify-center mt-56">
-      <div className="w-16 h-16 lg:w-20 lg:h-20  border-l-2 border-blue-500 rounded-full flex justify-center items-center animate-[spin_1.8s_linear_infinite]">
-        <div className="w-16 h-16  border-b-2 border-[#C2410C] rounded-full flex justify-center items-center animate-[spin_1.8s_linear_infinite]">
-          <div className="w-10 h-10  border-r-2  border-orange-400 rounded-full animate-[spin_1.8s_linear_infinite]"></div>
-        </div>
+    <div className="flex items-center justify-center h-screen">
+      <div className="flex space-x-2">
+        <div className="w-3 h-3 lg:w-4 lg:h-4 bg-blue-500 rounded-full animate-bounce [animation-delay:-0.3s]"></div>
+        <div className="w-3 h-3 lg:w-4 lg:h-4 bg-[#C2410C] rounded-full animate-bounce [animation-delay:-0.15s]"></div>
+        <div className="w-3 h-3 lg:w-4 lg:h-4 bg-blue-500 rounded-full animate-bounce"></div>
       </div>
     </div>
   );
