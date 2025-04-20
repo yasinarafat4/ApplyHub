@@ -52,7 +52,7 @@ const AppliedLIst = () => {
       )}
 
       {/* Main content */}
-      <main className="flex-1 p-4 mt-16 md:mt-0 md:ml-64">
+      <main className="flex-1 p-4 mt-16 md:mt-0">
         <div className="overflow-x-auto">
           <table className="min-w-full bg-white shadow-md rounded-xl overflow-hidden">
             <thead className="bg-gray-100 text-gray-700 text-sm uppercase">

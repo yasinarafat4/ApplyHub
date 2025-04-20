@@ -39,7 +39,7 @@ const OurServices = () => {
 
   return (
     <div className="container mx-auto">
-      <section id="services" className="py-20">
+      <section id="services" className="px-4 lg:px-0 py-20">
         <SectionTitle heading={"Our Services"} />
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 dark:bg-slate-900 dark:text-slate-200">
           {/* services */}
